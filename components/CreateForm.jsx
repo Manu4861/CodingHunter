@@ -22,6 +22,7 @@ function CreateForm({ update }) {
     useEffect(() => {
         setTitle(blogPost?.title);
         setContent(blogPost?.content);
+        setLink(blogPost?.link);
     }, [blogPost])
 
     async function onPost() {

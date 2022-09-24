@@ -55,7 +55,7 @@ export const BlogSlice = createSlice({
             BlogAdapter.removeOne(state, payload);
             state.isDeleting = false;
         },
-        [deleteBlog.pending]: (state, { payload }) => {
+        [deleteBlog.pending]: (state) => {
             state.isDeleting = true;
         },
     }

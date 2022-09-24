@@ -3,13 +3,13 @@ import { initializeApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-    apiKey: "AIzaSyAK7NIfaTBgFmrs6MvdhTzeweX7j3WswoU",
-    authDomain: "codinghunter-6310e.firebaseapp.com",
-    projectId: "codinghunter-6310e",
-    storageBucket: "codinghunter-6310e.appspot.com",
-    messagingSenderId: "731728980037",
-    appId: "1:731728980037:web:9bc5b89aae7f647bbe9b2c",
-    measurementId: "G-PD92YGMR0D"
+    apiKey: process.env.NEXT_PUBLIC_APIKEY,
+    authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
+    projectId: process.env.NEXT_PUBLIC_PROJECTID,
+    storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_MESSAGINGSID,
+    appId: process.env.NEXT_PUBLIC_APPID,
+    measurementId: process.env.NEXT_PUBLIC_MEASURMENTID
 };
 
 // Initialize Firebase

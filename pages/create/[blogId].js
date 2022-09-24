@@ -22,4 +22,4 @@ function Create() {
     )
 }
 
-export default create;
+export default Create;

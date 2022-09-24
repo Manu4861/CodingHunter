@@ -30,4 +30,4 @@ function Blog() {
     )
 }
 
-export default blog
+export default Blog

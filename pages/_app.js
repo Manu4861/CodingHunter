@@ -5,7 +5,7 @@ import { store } from '../store'
 import { onAuthStateChanged } from "firebase/auth"
 import { useEffect, useState } from 'react'
 import { auth } from '../config'
-import { AuthActions } from '../store/Auth.slice'
+import { AuthActions } from '../store/auth.slice'
 import Loader from '../components/Loader'
 
 function MyApp({ Component, pageProps }) {

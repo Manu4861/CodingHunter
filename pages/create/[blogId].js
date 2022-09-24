@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import CreateForm from '../../components/CreateForm'
 
-function create() {
+function Create() {
     const router = useRouter()
     const isLoggedIn = useSelector(state => state.auth.uid);
 

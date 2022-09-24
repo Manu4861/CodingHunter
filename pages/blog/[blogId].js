@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getBlogPostById } from '../../store/api/blog.api';
 import { BlogSelector } from '../../store/blog.slice';
 
-function blog() {
+function Blog() {
     const router = useRouter();
     const { blogId } = router.query;
     const blogPost = useSelector(state => BlogSelector.selectById(state, blogId))
